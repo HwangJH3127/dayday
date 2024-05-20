@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mongtree site</title>
+    <meta name="keywords" content="mongtree site">
+    <meta name="description" content="mongtree site">
+    <meta name="robots" content="index, follow">
+
+    <!-- open graph -->
+    <meta property="og:title" content="mongtree site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="mongtree site" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/style.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+
+
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/gmarket.css">
+    <link rel="stylesheet" href="assets/fonts/junegull.css">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 모바일 사이드 메뉴  -->
+    <div class="mo_menu">
+        <!-- mo_login -->
+        <div class="mo_login_wrap">
+
+            <div class="mo_header">
+                <div class="container row">
+                    <div class="col-4">
+                        <a class="navbar-brand" href="index.html">데이데이</a>
+                    </div>
+
+                    <div class="col-7">
+                        <form class="mo_search" role="search">
+                            <input class="form-control me-2 search_input" type="" placeholder="" aria-label="Search">
+                            <button class="btn search_ico" type="button" onclick="location.href='search.html'"><img
+                                    src="assets/img/ico_search.png"></button>
+                        </form>
+                    </div>
+
+
+                    <div class="close_btn col-1 text-right">
+                        <img src="assets/img/close_btn.png" style="width:14px;">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mo_login">
+                <!-- 로그인 전 -->
+                <a href="login.html">
+                    <p><span>로그인</span>해주세요.</p>
+                </a>
+
+                <!-- 로그인 후 -->
+                <!-- 
+                <div class="user_profile_wrap"><img src="assets/img/user_profile.png" style="width:45px"></div>
+                    <a href="mypage.html"><p><span class="user_name">몽트리</span>님</p></a> 
+            -->
+            </div>
+
+            <div class="mo_btn_wrap row mb-3">
+                <div class="col-6">
+                    <a href="cart.html" class="btn btn-green">장바구니</a>
+                </div>
+                <div class="col-6">
+                    <a href="wish_list.html" class="btn btn-line-grey">관심상품</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- mo_nav -->
+        <div class="collapse navbar-collapse mo_nav" id="navbarCollapse">
+            <ul class="mb-2 mb-md-0 gmarket_font">
+                <li class="nav-item">
+                    <a class="nav-link arrow_menu active" aria-current="page" href="list.html">디자인소품</a>
+                    <span class="dep2_btn"><img src="assets/img/down_btn.png" style="width:14px;"
+                            class="dep_ico"></span>
+                    <ul class="dep2">
+                        <li><a class="nav-link" aria-current="page" href="list.html">2차 카테고리</a></li>
+                        <li><a class="nav-link" aria-current="page" href="list.html">2차 카테고리</a></li>
+                        <li><a class="nav-link" aria-current="page" href="list.html">2차 카테고리</a></li>
+                        <li><a class="nav-link" aria-current="page" href="list.html">2차 카테고리</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arrow_menu" href="list.html">키덜트/취미</a>
+                    <!-- <span class="dep2_btn"><img src="assets/img/down_btn.png" style="width:14px;" class="dep_ico"></span> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arrow_menu" href="list.html">여행/레포츠</a>
+                    <!-- <span class="dep2_btn"><img src="assets/img/down_btn.png" style="width:14px;" class="dep_ico"></span> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arrow_menu" href="list.html">가구</a>
+                    <!-- <span class="dep2_btn"><img src="assets/img/down_btn.png" style="width:14px;" class="dep_ico"></span> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arrow_menu" href="list.html">인테리어</a>
+                    <!-- <span class="dep2_btn"><img src="assets/img/down_btn.png" style="width:14px;" class="dep_ico"></span> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arrow_menu" href="list.html">패브릭</a>
+                    <!-- <span class="dep2_btn"><img src="assets/img/down_btn.png" style="width:14px;" class="dep_ico"></span> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 모바일사이드 메뉴 -->
+
+    <!-- HEADER -->
+    <header class="fixed-top bg-white">
+        <div class="custom_top_nav container-fluid container">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+                <li><a href="login.html" class="nav-link px-2">로그인</a></li>
+                <!-- 로그인 했을 경우 로그인, 회원가입 빠지고 로그아웃, 마이페이지 추가 부탁드려요. -->
+                <!-- <li><a href="" class="nav-link px-2">로그아웃</a></li> -->
+                <li><a href="register.html" class="nav-link px-2">회원가입</a></li>
+                <!-- <li><a href="mypage.html" class="nav-link px-2">마이페이지</a></li> -->
+                <li><a href="order_confirmation.html" class="nav-link px-2">주문/배송</a></li>
+                <li><a href="cart.html" class="nav-link px-2">장바구니</a></li>
+                <li><a href="wish_list.html" class="nav-link px-2">관심상품</a></li>
+                <li><a href="faq.html" class="nav-link px-2">고객센터</a></li>
+            </ul>
+        </div>
+
+        <nav class="custom_nav navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">데이데이</a>
+                <div class="ham_ico">
+                    <img src="assets/img/ham_ico.png" style="width:20px;">
+                </div>
+
+                <form class="d-flex main_search" role="search">
+                    <input class="form-control me-2 search_input" type="" placeholder="" aria-label="Search">
+                    <button class="btn search_ico" type="button" onclick="location.href='search.html'"><img
+                            src="assets/img/ico_search.png"></button>
+                </form>
+            </div>
+
+            <div class="container-fluid container">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mb-2 mb-md-0 gmarket_font">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="list.html">디자인소품</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list.html">키덜트/취미</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list.html">여행/레포츠</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list.html">가구</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list.html">인테리어</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list.html">패브릭</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- detail -->
+        <div class="container">
+            <div class="detail_top_wrap row">
+                <div class="detail_left col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="큰 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="큰 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="큰 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="큰 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="큰 이미지">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="작은 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="작은 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="작은 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="작은 이미지">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container"><img src="assets/img/big_thumb1.png" alt="작은 이미지">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail_right col-lg-6 col-md-6 col-sm-12">
+                    <!-- 관심상품, 공유하기 -->
+                    <div class="dr_sns">
+                        <div class="wish_ico">
+                            <button type="button"><img src="assets/img/wish_ico.png"></button>
+                            <div class="wish_pop">
+                                <p>관심상품에 추가되었습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="share_ico">
+                            <button type="button"><img src="assets/img/share_ico.png"></button>
+                            <div class="share_pop">
+                                <a href=""><img src="assets/img/share_1.png"></a>
+                                <a href=""><img src="assets/img/share_2.png"></a>
+                                <a href=""><img src="assets/img/share_3.png"></a>
+                                <a href=""><img src="assets/img/share_4.png"></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- 상품 정보 -->
+                    <div class="dr_info">
+                        <div class="dr_tit">
+                            <span class="brand">브랜드</span>
+                            <h2>제품명을 입력해주세요.</h2>
+                        </div>
+                        <div class="dr_price mt-3">
+                            <p class="sale_rate green_font">30%</p>
+                            <p class="item_price">13,500원</p>
+                            <p class="discount_price">18,500원</p>
+                        </div>
+                    </div>
+
+                    <!-- 옵션 선택 -->
+                    <div class="dr_option">
+                        <table class="table">
+                            <colgroup>
+                                <col width="30%">
+                                <col width="70%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>옵션선택</th>
+                                    <td>
+                                        <select class="form-select">
+                                            <option selected>옵션 선택</option>
+                                            <option value="op_1" disabled>품절</option>
+                                            <option value="op_2">옵션2</option>
+                                            <option value="op_3">옵션3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>마일리지</th>
+                                    <td>135마일</td>
+                                </tr>
+                                <tr>
+                                    <th>배송구분</th>
+                                    <td>업체무료배송</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 수량 선택 -->
+                    <div class="dr_quantity">
+                        <table class="table">
+                            <colgroup>
+                                <col width="30%">
+                                <col width="70%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>수량</th>
+                                    <td>
+                                        <div class="qt_control">
+                                            <button type="button" class="minus">-</button> <input type="text" value="1">
+                                            <button type="button" class="plus">+</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 주문하기, 장바구니 -->
+                    <div class="mt-4 row detail_btn_wrap">
+                        <div class="col-lg-7 col-md-7 col-sm-6">
+                            <button class="btn btn-green order_btn"
+                                onclick="location.href='order_form.html'">주문하기</button>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <button class="btn btn-line-grey cart_btn" onclick="location.href='cart.html'">장바구니</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- detail tab page -->
+            <div class="detail_tab_page">
+                <div id="detail" class="anchor"></div>
+                <div class="list_tab2 mb-3">
+                    <div class="btn-group">
+                        <a href="#detail" class="btn active" id="detail">DETAIL</a><a href="#guide"
+                            class="btn">GUIDE</a><a href="#shipping" class="btn">SHIPPING</a><a href="#review"
+                            class="btn">REVIEW</a>
+                    </div>
+                </div>
+
+                <!-- #detail -->
+                <div>
+                    <img src="assets/img/detail_img1.png">
+                </div>
+            </div>
+            <!-- /detail tab page -->
+
+            <!-- guide tab page -->
+            <div class="detail_tab_page">
+                <div id="guide" class="anchor"></div>
+                <div class="list_tab2 mb-3">
+                    <div class="btn-group">
+                        <a href="#detail" class="btn" id="detail">DETAIL</a><a href="#guide"
+                            class="btn active">GUIDE</a><a href="#shipping" class="btn">SHIPPING</a><a href="#review"
+                            class="btn">REVIEW</a>
+                    </div>
+                </div>
+
+                <!-- guide -->
+                <div class="guide_cont">
+                    <p>
+                        상품결제정보<br>
+                        고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문등 정상적인 주문이 아니라고 판단될 경우 임의로
+                        주문을 보류 또는 취소할 수 있습니다.<br>
+                        <br>
+                        무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.<br>
+                        주문시 입력한 입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며 입금되지 않은 주문은 자동취소 됩니다.<br>
+                        <br>
+                        교환 및 반품이 가능한 경우<br>
+                        - 계약내용에 관한 서면을 받은 날부터 7일. 단, 그 서면을 받은 때보다 재화등의 공급이 늦게 이루어진 경우에는 재화등을 공급받거나 재화등의 공급이 시작된 날부터 7일
+                        이내<br>
+                        - 공급받으신 상품 및 용역의 내용이 표시.광고 내용과 다르거나 계약내용과 다르게 이행된 때에는 당해 재화 등을 공급받은 날 부터 3월이내, 그사실을 알게 된 날 또는 알
+                        수
+                        있었던 날부터 30일이내<br>
+                        <br>
+                        교환 및 반품이 불가능한 경우<br>
+                        - 이용자에게 책임 있는 사유로 재화 등이 멸실 또는 훼손된 경우(다만, 재화 등의 내용을 확인하기 위하여 포장 등을 훼손한 경우에는 청약철회를 할 수 있습니다)<br>
+                        - 이용자의 사용 또는 일부 소비에 의하여 재화 등의 가치가 현저히 감소한 경우<br>
+                        - 시간의 경과에 의하여 재판매가 곤란할 정도로 재화등의 가치가 현저히 감소한 경우<br>
+                        - 복제가 가능한 재화등의 포장을 훼손한 경우<br>
+                        - 개별 주문 생산되는 재화 등 청약철회시 판매자에게 회복할 수 없는 피해가 예상되어 소비자의 사전 동의를 얻은 경우<br>
+                        - 디지털 콘텐츠의 제공이 개시된 경우, (다만, 가분적 용역 또는 가분적 디지털콘텐츠로 구성된 계약의 경우 제공이 개시되지 아니한 부분은 청약철회를 할 수
+                        있습니다.)<br>
+                        <br>
+                        ※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다.<br>
+                        (색상 교환, 사이즈 교환 등 포함)
+                    </p>
+                </div>
+            </div>
+            <!-- /guide tab page -->
+
+            <!-- shipping tab page -->
+            <div class="detail_tab_page">
+                <div id="shipping" class="anchor"></div>
+                <div class="list_tab2 mb-3">
+                    <div class="btn-group">
+                        <a href="#detail" class="btn" id="detail">DETAIL</a><a href="#guide" class="btn">GUIDE</a><a
+                            href="#shipping" class="btn active">SHIPPING</a><a href="#review" class="btn">REVIEW</a>
+                    </div>
+                </div>
+
+                <!-- #shipping -->
+                <div class="shipping_cont">
+                    <p>
+                        모든 국내배송은 기본 배송비가 2,500원 이며 50,000원 이상 무료배송입니다.<br><br>
+
+                        RETURNS<br><br>
+
+                        교환 및 반품 주소 - [429888] 경기도 시흥시 신천동 69번지<br><br>
+
+                        포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다. 상품을 받으신 그대로 5일 이내로 반송해주셔야 합니다.<br>
+                        5일이내에 상품을 반송하지 않거나, 상품의 태그 훼손, 착용 흔적 등의 상품가치가 훼손 된 경우 교환/반품이 불가능합니다.
+                    </p>
+                </div>
+            </div>
+            <!-- /shipping tab page -->
+
+            <!-- review tab page -->
+            <div class="detail_tab_page">
+                <div id="review" class="anchor"></div>
+                <div class="list_tab2 mb-3">
+                    <div class="btn-group">
+                        <a href="#detail" class="btn" id="detail">DETAIL</a><a href="#guide" class="btn">GUIDE</a><a
+                            href="#shipping" class="btn">SHIPPING</a><a href="#review" class="btn active">REVIEW</a>
+                    </div>
+                </div>
+
+                <!-- #review -->
+                <div class="review_cont">
+                    <div class="review_list">
+                        <div class="review_user">
+                            <p><img src="assets/img/user_profile.png" style="width:25px;"> <span class="user_id">test1</span></p>
+                        </div>
+                        <div class="review_header">
+                            <p class="review_score"><img src="assets/img/star5.png" style="width:auto"></p>
+                            <p class="review_option">구매옵션 : <span>구매옵션정보</span></p>
+                            <p class="review_date">2022.09.02</p>
+                        </div>
+                        <div class="review_txt">
+                            <p>이곳은 댓글이 작성되는 곳입니다. <span><img src="assets/img/down_btn.png" style="width:14px;"
+                                        class="pic_view"></span></p>
+
+                            <div class="review_img">
+                                <img src="assets/img/review_img.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_list">
+                        <div class="review_user">
+                            <p><img src="assets/img/user_profile.png" style="width:25px;"> <span class="user_id">test1</span></p>
+                        </div>
+                        <div class="review_header">
+                            <p class="review_score"><img src="assets/img/star5.png" style="width:auto"></p>
+                            <p class="review_option">구매옵션 : <span>구매옵션정보</span></p>
+                            <p class="review_date">2022.09.02</p>
+                        </div>
+                        <div class="review_txt">
+                            <p>이곳은 댓글이 작성되는 곳입니다. <span class=""><img src="assets/img/down_btn.png" style="width:14px;"
+                                        class="pic_view"></span></p>
+
+                            <div class="review_img">
+                                <img src="assets/img/review_img.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 페이지 네이션 -->
+                <div class="container sub_pager">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /review tab page -->
+        </div>
+        <!-- /detail -->
+    </main>
+
+    <!-- FOOTER -->
+    <div class="foot_top_menu">
+        <div class="container">
+            <a href="privacy.html">개인정보 처리방침</a>
+            <a href="provision.html">이용약관</a>
+            <a href="guide.html">이용안내</a>
+            <a href="notice.html">공지사항</a>
+        </div>
+    </div>
+    <footer class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4">
+                    <div class="py-3 info_bg">
+                        <h4 class="my-0">C/S</h4>
+                    </div>
+                    <div class="card-body mt-3">
+                        <p class="green_font">1588-1248</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>AM 10:00 ~ PM 05:00 Off-time PM 12:00 ~ PM 02:00</li>
+                            <li>DAY OFF (SATERDAY, SUNDAY, HOLYDAY)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4">
+                    <div class="py-3 info_bg">
+                        <h4 class="my-0">COMPANY</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mt-2 mb-4 company_info">
+                            <li class="txt_inline">상호 <span>(주)데이데이</span></li>
+                            <li class="txt_inline">대표 <span>김대표</span></li>
+                            <li>사업자등록번호 <span>[123-45-6789]</span></li>
+                            <li>통신판매업신고 <span>제 2022-00000-1234호</span><span>[사업자정보확인]</span></li>
+                            <li>팩스 <span>070-1234-1234</span></li>
+                            <li>주소 <span>12345 인천광역시 부평구 갈산동 94</span></li>
+                            <li>개인정보관리책임자 <span>김개인</span>(<span>dayday@day.com</span>)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4">
+                    <div class="py-3 info_bg">
+                        <h4 class="my-0">BANK</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mt-4 mb-4">
+                            <li class="mb-2">기업 <span>123456-12-123456</span></li>
+                            <li class="mb-2">국민 <span>123456-12-123456</span></li>
+                            <li>예금주 <span>(주)데이데이</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <p class="float-end"><a href="#">Back to top</a></p>
+  <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
+    </footer>
+</body>
+
+<script>
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        loop: true,
+        loopedSlides: 4
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
+
+    /* 리뷰 사진 더보기 */
+    $(".review_txt").click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(this).children(".review_img").slideUp("fast");
+            $(this).find(".pic_view").attr("src", "assets/img/down_btn.png");
+        } else {
+            $(this).addClass("active");
+            $(this).children(".review_img").slideDown("fast");
+            $(this).find(".pic_view").attr("src", "assets/img/up_btn.png");
+        }
+
+    });
+
+    /* 찜하기 */
+    $(".wish_ico").click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(".wish_ico img").attr("src", "assets/img/wish_ico.png");
+            $(".wish_pop").hide();
+        } else {
+            $(this).addClass("active");
+            $(".wish_ico img").attr("src", "assets/img/wish_ico_on.png");
+            $(".wish_pop").show();
+
+            setTimeout(function () {
+                $(".wish_pop").hide();
+            }, 2000)
+        }
+    });
+
+    /* 공유하기 */
+    $(".share_ico").click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(".share_pop").hide();
+        } else {
+            $(this).addClass("active");
+            $(this).addClass("active");
+            $(".share_pop").show();
+
+            setTimeout(function () {
+                $(".share_pop").hide();
+            }, 10000)
+        }
+    });
+</script>
+
+</html>
